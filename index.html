@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="col1"></div>
+        
+        <div class="col2">
+
+            <div class=" logo"></div>          
+
+            <span class="mt-14 title">Bits Solutions</span>
+            <span class="mt-6 subtitle text-muted">Soluções em tecnologia</span>           
+
+            <form id="formLogin" class="mt-14" onsubmit="login(event)">
+                <input id="inputEmail" name="email" required type="email" placeholder="E-mail">
+                <input id="inputPassword" name="password" required type="password" placeholder="Senha">
+
+                <a href="recover-password">Esqueceu a senha?</a>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <label class="mt-14 text-muted" >Ou, faça login com</label>
+            <div class="social mt-6 ">
+                <label>Google</label>
+                <label>Apple</label>
+            </div>
+
+            <span class="dont-account">Não tem uma conta? <a href="cadastro">Cadastre-se</a></span>
+        </div>
+
+        <!-- Teste de login -->
+        
+        <!-- <script>
+            function login(e) {
+                e.preventDefault()               
+                const email = document.getElementById('inputEmail').value;
+                const password = document.getElementById('inputPassword').value;
+
+            const data = [
+                {
+                    id: 1,
+                    email: 'lucaswillyaraujo@gmail.com',
+                    password: '123456'
+                }
+            ]
+
+            const result = data.find(item => item.email === email && item.password === password)
+
+            console.log('RESULT:');
+
+            console.log(result);
+
+            if (!result) {
+                alert ('E-mail e/ou senha incorretos.')
+            } else {
+                alert('Bem-vindo a sua conta!')
+            }
+        }
+        </script> -->
+</body>
+</html>
